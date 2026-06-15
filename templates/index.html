@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Boys Hostel - A Home Away From Home</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Galaxy Boys Hostel Logo">
+            </a>
+            <nav class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#mess">Mess</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-cta">
+                <a href="#book" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book Now</a>
+            </div>
+            <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <h1>A Home Away<br><span>From Home.</span></h1>
+                <p>Comfortable rooms, wholesome food and a friendly environment &mdash; everything you need to live, study and grow.</p>
+                <div class="hero-buttons">
+                    <a href="#rooms" class="btn btn-primary">Explore Rooms &rarr;</a>
+                    <a href="#tour" class="btn btn-outline-light"><i class="fa-solid fa-circle-play"></i> Watch Tour</a>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <h4>Safe & Secure</h4>
+                            <p>24/7 Security</p>
+                        </div>
+                    </div>
+                    <div class="hero-feature">
+                        <div class="icon"><i class="fa-solid fa-wifi"></i></div>
+                        <div>
+                            <h4>High Speed Wi-Fi</h4>
+                            <p>Stay Connected</p>
+                        </div>
+                    </div>
+                    <div class="hero-feature">
+                        <div class="icon"><i class="fa-solid fa-user-group"></i></div>
+                        <div>
+                            <h4>Friendly Community</h4>
+                            <p>Make Lifelong Bonds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-placeholder">
+                <!-- We will add a background image to the hero section instead -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Bar -->
+    <section id="book" class="booking-section">
+        <div class="container">
+            <div class="booking-card">
+                <div class="booking-header">
+                    <div class="icon-box"><i class="fa-regular fa-calendar-days"></i></div>
+                    <div>
+                        <h3>Book Your Stay</h3>
+                        <p>Fill in details and we will get back to you!</p>
+                    </div>
+                </div>
+                <form class="booking-form" onsubmit="event.preventDefault(); alert('Booking form submitted!');">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="tel" placeholder="Enter mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Check In</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Check Out</label>
+                        <input type="date" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit &rarr;</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="facilities" class="features-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">WHY STAY WITH US</span>
+                <h2>Comfort. Convenience. Community.</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-bed"></i></div>
+                    <h3>Well Furnished Rooms</h3>
+                    <p>Spacious, clean and fully furnished rooms for your comfort.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-utensils"></i></div>
+                    <h3>Nutritious Mess</h3>
+                    <p>Hygienic and balanced meals cooked with care every day.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-wifi"></i></div>
+                    <h3>High Speed Wi-Fi</h3>
+                    <p>Fast and reliable internet to keep you connected always.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                    <h3>Study Environment</h3>
+                    <p>Peaceful atmosphere perfect for focused studies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>24/7 Security</h3>
+                    <p>CCTV surveillance and security staff for your safety.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-jug-detergent"></i></div>
+                    <h3>Laundry Service</h3>
+                    <p>Hassle-free laundry service to keep you worry-free.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">ROOMS</span>
+                <h2>Choose Your Perfect Room</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="rooms-grid">
+                <!-- Room Card 1 -->
+                <div class="room-card">
+                    <div class="room-img" style="background-color: #94A3B8;"></div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Sharing Room</h3>
+                            <span class="capacity"><i class="fa-regular fa-user"></i> 2 - 3 Sharing</span>
+                        </div>
+                        <p>Ideal for students who enjoy a friendly and budget-friendly stay.</p>
+                        <div class="room-footer">
+                            <div class="price"><span>PKR 15,500</span> /month</div>
+                            <a href="#" class="btn btn-primary">View Details &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Room Card 2 -->
+                <div class="room-card">
+                    <div class="room-img" style="background-color: #94A3B8;"></div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Double Sharing</h3>
+                            <span class="capacity"><i class="fa-regular fa-user"></i> 2 Sharing</span>
+                        </div>
+                        <p>Perfect balance of space, privacy and affordability.</p>
+                        <div class="room-footer">
+                            <div class="price"><span>PKR 18,500</span> /month</div>
+                            <a href="#" class="btn btn-primary">View Details &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Room Card 3 -->
+                <div class="room-card">
+                    <div class="room-img" style="background-color: #94A3B8;"></div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Single Room</h3>
+                            <span class="capacity"><i class="fa-regular fa-user"></i> 1 Person</span>
+                        </div>
+                        <p>Premium privacy and comfort for your focused lifestyle.</p>
+                        <div class="room-footer">
+                            <div class="price"><span>PKR 25,000</span> /month</div>
+                            <a href="#" class="btn btn-primary">View Details &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#rooms" class="btn btn-outline-primary">View All Rooms &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">LIFE AT GALAXY BOYS HOSTEL</span>
+                <h2>Moments That Feel Like Home</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-img" style="background-color: #94A3B8;"></div>
+                <div class="gallery-img" style="background-color: #94A3B8;"></div>
+                <div class="gallery-img" style="background-color: #94A3B8;"></div>
+                <div class="gallery-img" style="background-color: #94A3B8;"></div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#gallery" class="btn btn-outline-primary">View Full Gallery &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <div class="icon-box"><i class="fa-regular fa-comments"></i></div>
+                    <div>
+                        <h2>Have Questions?</h2>
+                        <p>We're here to help you find the perfect stay.</p>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-accent">Contact Us &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Logo" class="footer-logo">
+                    <p>More than just a place to stay. It's a place to live, learn and create memories.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#mess">Mess</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Facilities</h3>
+                    <ul>
+                        <li><a href="#">Wi-Fi</a></li>
+                        <li><a href="#">Mess</a></li>
+                        <li><a href="#">Laundry</a></li>
+                        <li><a href="#">CCTV Security</a></li>
+                        <li><a href="#">Power Backup</a></li>
+                        <li><a href="#">Housekeeping</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> +92 300 1234567</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@galaxyboyshostel.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> 123, University Road, City Center</li>
+                        <li><i class="fa-regular fa-clock"></i> Mon - Sun: 8:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates and offers.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Galaxy Boys Hostel. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
