@@ -1,6 +1,6 @@
-# Galaxy Boys Hostel - Web Application
+# Sky Boys Hostel - Web Application
 
-Welcome to the **Galaxy Boys Hostel** repository. This is a modern, beautifully designed web application built with a hybrid approach using Python (Flask) and Frozen-Flask for static deployment to GitHub Pages.
+Welcome to the **Sky Boys Hostel** repository. This is a modern, beautifully designed web application built with a hybrid approach using Python (Flask) and Frozen-Flask for static deployment to GitHub Pages.
 
 ## 🚀 Technologies Used
 *   **Backend:** Python, Flask
