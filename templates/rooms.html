@@ -1,21 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="hero" style="min-height: 40vh; padding-top: 120px; align-items: flex-start;">
-  <div class="hero-bg" aria-hidden="true" style="opacity: 0.5;"></div>
-  <div class="hero-pattern" aria-hidden="true"></div>
-  <div class="container hero-content" style="padding-bottom: 40px; padding-top: 40px; text-align: center;">
-    <h1 class="display hero-title" style="margin: 0 auto;">Rooms & Pricing</h1>
-    <p class="hero-subtitle" style="margin: 20px auto 0;">SUBRooms & Pricing</p>
+<section class="section" style="background: var(--navy-900); padding-top: calc(var(--nav-h) + 60px); padding-bottom: 60px; text-align: center; color: #fff;">
+  <div class="container">
+    <div style="font-size: 3rem; color: var(--purple); margin-bottom: 20px;"><i class="fa-solid fa-bed"></i></div>
+    <span class="eyebrow" style="color: var(--gold); display: block; text-align: center; margin: 0 auto 12px;">ACCOMMODATION</span>
+    <h1 class="heading-1">Find Your Perfect Room</h1>
+    <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 20px auto 0;">Affordable luxury tailored for your comfort.</p>
   </div>
 </section>
-
 <section class="section container">
-  <div class="section-header" style="text-align: center;">
-    <h2>Explore Rooms & Pricing</h2>
-    <div style="width: 60px; height: 3px; background: var(--amber); margin: 15px auto;"></div>
-  </div>
-  <div style="text-align: center; color: var(--text-2); min-height: 20vh;">
-    <p>Detailed information regarding Rooms & Pricing will be populated here.</p>
+  <div class="rooms-grid">
+    <div class="room-card">
+      <img src="static/images/hero-bg.png" class="room-image" alt="Sharing Room">
+      <div class="room-content">
+        <div class="room-header"><h3>Sharing Room</h3><span class="room-capacity"><i class="fa-regular fa-user"></i> 3 Sharing</span></div>
+        <p class="room-desc">Ideal for students who enjoy a friendly and budget-friendly stay. Includes individual wardrobes and study tables.</p>
+        <div class="room-footer"><div class="room-price">&#8377;5,500<span> /month</span></div><button class="btn btn-primary">Book Now</button></div>
+      </div>
+    </div>
+    <div class="room-card">
+      <img src="static/images/hero-bg.png" class="room-image" alt="Double Sharing">
+      <div class="room-content">
+        <div class="room-header"><h3>Double Sharing</h3><span class="room-capacity"><i class="fa-regular fa-user"></i> 2 Sharing</span></div>
+        <p class="room-desc">Perfect balance of space, privacy and affordability. Air-conditioned rooms available on request.</p>
+        <div class="room-footer"><div class="room-price">&#8377;6,500<span> /month</span></div><button class="btn btn-primary">Book Now</button></div>
+      </div>
+    </div>
+    <div class="room-card">
+      <img src="static/images/hero-bg.png" class="room-image" alt="Single Room">
+      <div class="room-content">
+        <div class="room-header"><h3>Single Room</h3><span class="room-capacity"><i class="fa-regular fa-user"></i> 1 Person</span></div>
+        <p class="room-desc">Premium privacy and comfort for your focused lifestyle. Attached washroom and premium furnishings.</p>
+        <div class="room-footer"><div class="room-price">&#8377;9,500<span> /month</span></div><button class="btn btn-primary">Book Now</button></div>
+      </div>
+    </div>
   </div>
 </section>
 {% endblock %}

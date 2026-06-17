@@ -1,21 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="hero" style="min-height: 40vh; padding-top: 120px; align-items: flex-start;">
-  <div class="hero-bg" aria-hidden="true" style="opacity: 0.5;"></div>
-  <div class="hero-pattern" aria-hidden="true"></div>
-  <div class="container hero-content" style="padding-bottom: 40px; padding-top: 40px; text-align: center;">
-    <h1 class="display hero-title" style="margin: 0 auto;">Mess & Food</h1>
-    <p class="hero-subtitle" style="margin: 20px auto 0;">SUBMess & Food</p>
+<section class="section" style="background: var(--navy-900); padding-top: calc(var(--nav-h) + 60px); padding-bottom: 60px; text-align: center; color: #fff;">
+  <div class="container">
+    <div style="font-size: 3rem; color: var(--purple); margin-bottom: 20px;"><i class="fa-solid fa-utensils"></i></div>
+    <span class="eyebrow" style="color: var(--gold); display: block; text-align: center; margin: 0 auto 12px;">MESS & FOOD</span>
+    <h1 class="heading-1">Nutritious & Delicious Meals</h1>
+    <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 20px auto 0;">Hygienic food prepared fresh every single day.</p>
   </div>
 </section>
-
-<section class="section container">
-  <div class="section-header" style="text-align: center;">
-    <h2>Explore Mess & Food</h2>
-    <div style="width: 60px; height: 3px; background: var(--amber); margin: 15px auto;"></div>
-  </div>
-  <div style="text-align: center; color: var(--text-2); min-height: 20vh;">
-    <p>Detailed information regarding Mess & Food will be populated here.</p>
+<section class="section container" style="max-width: 800px;">
+  <div style="background: var(--surface); padding: 40px; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-sm);">
+    <h2 class="heading-2" style="text-align: center; margin-bottom: 30px; color: var(--navy-900);">Weekly Menu Highlight</h2>
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+      <tr style="border-bottom: 2px solid var(--border);"><th style="padding: 15px; color: var(--purple);">Day</th><th style="padding: 15px; color: var(--purple);">Breakfast</th><th style="padding: 15px; color: var(--purple);">Dinner</th></tr>
+      <tr style="border-bottom: 1px solid var(--border);"><td style="padding: 15px; font-weight: 600;">Monday</td><td style="padding: 15px; color: var(--text-2);">Aloo Paratha, Curd</td><td style="padding: 15px; color: var(--text-2);">Paneer Butter Masala, Roti, Rice</td></tr>
+      <tr style="border-bottom: 1px solid var(--border);"><td style="padding: 15px; font-weight: 600;">Wednesday</td><td style="padding: 15px; color: var(--text-2);">Poha, Jalebi</td><td style="padding: 15px; color: var(--text-2);">Dal Makhani, Mix Veg, Rice</td></tr>
+      <tr style="border-bottom: 1px solid var(--border);"><td style="padding: 15px; font-weight: 600;">Friday</td><td style="padding: 15px; color: var(--text-2);">Chole Bhature</td><td style="padding: 15px; color: var(--text-2);">Rajma Chawal, Salad</td></tr>
+      <tr><td style="padding: 15px; font-weight: 600;">Sunday</td><td style="padding: 15px; color: var(--text-2);">Idli Sambar</td><td style="padding: 15px; color: var(--text-2);">Special Thali + Dessert</td></tr>
+    </table>
   </div>
 </section>
 {% endblock %}

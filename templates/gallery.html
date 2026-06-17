@@ -1,21 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="hero" style="min-height: 40vh; padding-top: 120px; align-items: flex-start;">
-  <div class="hero-bg" aria-hidden="true" style="opacity: 0.5;"></div>
-  <div class="hero-pattern" aria-hidden="true"></div>
-  <div class="container hero-content" style="padding-bottom: 40px; padding-top: 40px; text-align: center;">
-    <h1 class="display hero-title" style="margin: 0 auto;">Gallery</h1>
-    <p class="hero-subtitle" style="margin: 20px auto 0;">SUBGallery</p>
+<section class="section" style="background: var(--navy-900); padding-top: calc(var(--nav-h) + 60px); padding-bottom: 60px; text-align: center; color: #fff;">
+  <div class="container">
+    <div style="font-size: 3rem; color: var(--purple); margin-bottom: 20px;"><i class="fa-solid fa-images"></i></div>
+    <span class="eyebrow" style="color: var(--gold); display: block; text-align: center; margin: 0 auto 12px;">OUR GALLERY</span>
+    <h1 class="heading-1">Explore Life at StayNest</h1>
+    <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 20px auto 0;">Take a visual tour of our vibrant community and facilities.</p>
   </div>
 </section>
-
 <section class="section container">
-  <div class="section-header" style="text-align: center;">
-    <h2>Explore Gallery</h2>
-    <div style="width: 60px; height: 3px; background: var(--amber); margin: 15px auto;"></div>
-  </div>
-  <div style="text-align: center; color: var(--text-2); min-height: 20vh;">
-    <p>Detailed information regarding Gallery will be populated here.</p>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
   </div>
 </section>
 {% endblock %}
