@@ -102,6 +102,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   box-shadow: 0 1px 0 var(--border), var(--shadow-sm);
 }
 .navbar.scrolled .nav-logo-img { filter: brightness(0); }
+.navbar:not(.scrolled) .nav-logo-img { filter: brightness(0) invert(1); }
 .navbar.scrolled .nav-link { color: var(--text-1); }
 .navbar.scrolled .nav-link:hover { color: var(--navy-800); }
 .navbar.scrolled .nav-cta { background: var(--amber); color: var(--navy-900); }
