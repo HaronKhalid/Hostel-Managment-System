@@ -3,612 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galaxy Boys Hostel — A Home Away From Home</title>
-  <meta name="description" content="Premium boys hostel offering comfortable rooms, wholesome mess, high-speed Wi-Fi and 24/7 security. Starting from PKR 15,500/month. Inquire today.">
-  <meta property="og:title" content="Galaxy Boys Hostel — A Home Away From Home">
-  <meta property="og:description" content="Comfortable rooms, wholesome mess, 24/7 security. Starting from PKR 15,500/month.">
+  <title>StayNest Hostel</title>
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Styles -->
   <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════
-       NAVIGATION
-  ═══════════════════════════════════════ -->
-  <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <div class="nav-inner">
-      <!-- Logo -->
-      <a href="index.html" class="nav-logo" aria-label="Galaxy Boys Hostel — Home">
-        <img src="static/images/Logo.png" alt="Galaxy Boys Hostel" class="nav-logo-img" onerror="this.style.display='none'">
-        <span class="nav-logo-text">Galaxy Boys Hostel</span>
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="static/images/Logo.png" alt="StayNest Hostel" class="nav-logo-img">
+        <span class="nav-logo-text">StayNest <span>Hostel</span></span>
       </a>
-
-      <!-- Desktop links -->
-      <ul class="nav-links" role="list">
+      <ul class="nav-links">
         <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="facilities.html"    class="nav-link">Facilities</a></li>
-        <li><a href="rooms.html"     class="nav-link">Rooms</a></li>
-        <li><a href="mess.html"      class="nav-link">Mess</a></li>
-        <li><a href="gallery.html"   class="nav-link">Gallery</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="contact.html"   class="nav-link">Contact</a></li>
+        <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+        <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+        <li><a href="mess.html" class="nav-link">Mess</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
-
-      <!-- CTA + Hamburger -->
-      <a href="#booking" class="nav-cta">Book a Stay</a>
-      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="rooms.html" class="nav-cta"><i class="fa-regular fa-calendar-check"></i> Book Now</a>
     </div>
   </nav>
 
-  <!-- Mobile dropdown -->
-  <nav class="nav-mobile" aria-label="Mobile navigation">
-    <a href="facilities.html"    class="nav-link">Facilities</a>
-    <a href="rooms.html"     class="nav-link">Rooms</a>
-    <a href="mess.html"      class="nav-link">Mess</a>
-    <a href="gallery.html"   class="nav-link">Gallery</a>
-    <a href="about.html" class="nav-link">About Us</a>
-    <a href="contact.html"   class="nav-link">Contact</a>
-    <a href="#booking"   class="nav-cta btn btn-primary">Book a Stay →</a>
-  </nav>
-
-
-
-  <!-- ═══════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════ -->
-  <section class="hero" id="home">
-    <!-- Background image + pattern -->
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-pattern" aria-hidden="true"></div>
-    <div class="hero-glow" aria-hidden="true"></div>
-
-    <div class="hero-content">
-      <!-- Eyebrow -->
-      <div class="hero-eyebrow">Now accepting bookings for 2025–26</div>
-
-      <!-- Headline -->
-      <h1 class="display hero-title">
-        A <span class="accent">Home</span> Away<br>From Home.
-      </h1>
-
-      <!-- Subtitle -->
-      <p class="hero-subtitle">
-        Comfortable rooms, wholesome food, and a friendly community —
-        everything you need to live, study, and grow in the city.
-      </p>
-
-      <!-- CTAs -->
-      <div class="hero-actions">
-        <a href="#rooms" class="btn btn-primary btn-lg">
-          Explore Rooms
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="#booking" class="btn btn-outline btn-lg">Book a Stay</a>
-      </div>
-
-      <!-- Badges row -->
-      <div class="hero-badges" role="list">
-        <div class="hero-badge" role="listitem">
-          <div class="hero-badge-icon" aria-hidden="true">🔒</div>
-          <div>
-            <div class="hero-badge-label">Safe &amp; Secure</div>
-            <div class="hero-badge-sub">24/7 CCTV security</div>
-          </div>
-        </div>
-        <div class="hero-badge" role="listitem">
-          <div class="hero-badge-icon" aria-hidden="true">📶</div>
-          <div>
-            <div class="hero-badge-label">High-Speed Wi-Fi</div>
-            <div class="hero-badge-sub">Stay connected always</div>
-          </div>
-        </div>
-        <div class="hero-badge" role="listitem">
-          <div class="hero-badge-icon" aria-hidden="true">🍽️</div>
-          <div>
-            <div class="hero-badge-label">Nutritious Mess</div>
-            <div class="hero-badge-sub">3 fresh meals daily</div>
-          </div>
-        </div>
-        <div class="hero-badge" role="listitem">
-          <div class="hero-badge-icon" aria-hidden="true">📚</div>
-          <div>
-            <div class="hero-badge-label">Study Environment</div>
-            <div class="hero-badge-sub">Peaceful atmosphere</div>
-          </div>
-        </div>
-      </div>
+  
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-image"></div>
+  <div class="hero-content">
+    <div class="hero-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+    <h1 class="display hero-title">A Home Away<br><span class="text-gold">From Home.</span></h1>
+    <p class="hero-subtitle">Comfortable rooms, wholesome food and a friendly environment — everything you need to live, study and grow.</p>
+    <div class="hero-actions">
+      <a href="rooms.html" class="btn btn-primary">Explore Rooms &rarr;</a>
+      <a href="#" class="btn btn-outline-light"><i class="fa-regular fa-circle-play"></i> Watch Tour</a>
     </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════
-       STATS STRIP
-  ═══════════════════════════════════════ -->
-  <div class="stats-strip" role="region" aria-label="Hostel highlights">
-    <div class="stats-inner">
-      <div class="stat-item reveal">
-        <span class="stat-number">50+</span>
-        <span class="stat-label">Happy Residents</span>
+    <div class="hero-badges">
+      <div class="hero-badge">
+        <div class="badge-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="badge-info"><h4>Safe &amp; Secure</h4><p>24/7 Security</p></div>
       </div>
-      <div class="stat-item reveal reveal-delay-1">
-        <span class="stat-number">3</span>
-        <span class="stat-label">Room Types</span>
+      <div class="hero-badge">
+        <div class="badge-icon"><i class="fa-solid fa-wifi"></i></div>
+        <div class="badge-info"><h4>High Speed Wi-Fi</h4><p>Stay Connected</p></div>
       </div>
-      <div class="stat-item reveal reveal-delay-2">
-        <span class="stat-number">PKR 15.5K</span>
-        <span class="stat-label">Starting / Month</span>
-      </div>
-      <div class="stat-item reveal reveal-delay-3">
-        <span class="stat-number">24/7</span>
-        <span class="stat-label">Security &amp; Support</span>
+      <div class="hero-badge">
+        <div class="badge-icon"><i class="fa-solid fa-user-group"></i></div>
+        <div class="badge-info"><h4>Friendly Community</h4><p>Make Lifelong Bonds</p></div>
       </div>
     </div>
   </div>
+</section>
 
-
-  <!-- ═══════════════════════════════════════
-       WHY US
-  ═══════════════════════════════════════ -->
-  <section class="section why-us" id="why-us">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="eyebrow">Why Stay With Us</div>
-        <h2 class="heading-1">Comfort. Convenience.<br>Community.</h2>
-      </div>
-
-      <div class="features-grid">
-        <div class="feature-card reveal reveal-delay-1">
-          <div class="feature-icon" aria-hidden="true">🛏️</div>
-          <h3 class="heading-3">Well Furnished Rooms</h3>
-          <p>Spacious, clean rooms with quality beds, study tables, wardrobes, and proper ventilation — everything arranged for your comfort.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-2">
-          <div class="feature-icon" aria-hidden="true">🍛</div>
-          <h3 class="heading-3">Nutritious Mess</h3>
-          <p>Hygienic, balanced meals cooked with care every day. Breakfast, lunch, and dinner — all included in your monthly package.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-3">
-          <div class="feature-icon" aria-hidden="true">📶</div>
-          <h3 class="heading-3">High-Speed Wi-Fi</h3>
-          <p>Fast, reliable internet throughout the hostel so you can attend online classes, complete assignments, and stay connected.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-4">
-          <div class="feature-icon" aria-hidden="true">📖</div>
-          <h3 class="heading-3">Study Environment</h3>
-          <p>A peaceful, distraction-free atmosphere designed for focused academic work — because your studies come first.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-5">
-          <div class="feature-icon" aria-hidden="true">🔒</div>
-          <h3 class="heading-3">24/7 Security</h3>
-          <p>Round-the-clock CCTV surveillance, security personnel on premises, and controlled entry for your complete peace of mind.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-1">
-          <div class="feature-icon" aria-hidden="true">👕</div>
-          <h3 class="heading-3">Laundry Service</h3>
-          <p>Hassle-free laundry available on site so you can focus on what matters — without worrying about the little things.</p>
-        </div>
+<!-- BOOKING BAR -->
+<div class="booking-bar-wrapper">
+  <div class="booking-bar">
+    <div class="booking-title">
+      <div class="booking-icon"><i class="fa-regular fa-calendar-days"></i></div>
+      <div>
+        <h3>Book Your Stay</h3>
+        <p>Fill in details and we will get back to you!</p>
       </div>
     </div>
-  </section>
+    <form class="booking-form">
+      <div class="form-col"><label>Your Name</label><input type="text" placeholder="Enter your name"></div>
+      <div class="form-col"><label>Mobile Number</label><input type="tel" placeholder="Enter mobile number"></div>
+      <div class="form-col"><label>Check In</label><input type="date"></div>
+      <div class="form-col"><label>Check Out</label><input type="date"></div>
+      <button type="button" class="btn btn-primary">Submit &rarr;</button>
+    </form>
+  </div>
+</div>
 
-
-  <!-- ═══════════════════════════════════════
-       ROOMS
-  ═══════════════════════════════════════ -->
-  <section class="section rooms-section" id="rooms">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="eyebrow">Accommodation</div>
-        <h2 class="heading-1">Choose Your Perfect Room</h2>
-        <p class="lead" style="margin-top:12px;max-width:500px;">Three options to fit every budget and lifestyle — all with the same care and quality.</p>
-      </div>
-
-      <div class="rooms-grid">
-        <!-- Room 1: Sharing -->
-        <article class="room-card reveal reveal-delay-1">
-          <div class="room-img-wrap">
-            <img src="static/images/room-sharing.jpg"
-                 alt="Sharing room with 2–3 beds, study tables, and wardrobes"
-                 loading="lazy"
-                 onerror="this.parentElement.style.background='#1A2E44';this.style.display='none'">
-            <span class="room-badge">Budget Pick</span>
-          </div>
-          <div class="room-body">
-            <div class="room-type">2–3 Sharing</div>
-            <h3 class="room-name">Sharing Room</h3>
-            <p class="room-desc">Ideal for students who enjoy a sociable, budget-friendly stay without compromising on quality or comfort.</p>
-            <div class="room-features">
-              <span class="room-feature-tag">Shared Bathroom</span>
-              <span class="room-feature-tag">Study Table</span>
-              <span class="room-feature-tag">Wardrobe</span>
-              <span class="room-feature-tag">Wi-Fi</span>
-            </div>
-            <div class="room-footer">
-              <div>
-                <div class="room-price-label">Starting from</div>
-                <div class="room-price">PKR 15,500 <span>/month</span></div>
-              </div>
-              <a href="rooms.html#sharing" class="room-cta">
-                View Details
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Room 2: Double (Featured) -->
-        <article class="room-card featured reveal reveal-delay-2">
-          <div class="room-img-wrap">
-            <img src="static/images/room-double.jpg"
-                 alt="Double sharing room with two beds and private study area"
-                 loading="lazy"
-                 onerror="this.parentElement.style.background='#2D4A6B';this.style.display='none'">
-            <span class="room-badge popular">Most Popular</span>
-          </div>
-          <div class="room-body">
-            <div class="room-type">2 Sharing</div>
-            <h3 class="room-name">Double Sharing</h3>
-            <p class="room-desc">The perfect balance of space, privacy, and affordability — our most popular choice among long-term residents.</p>
-            <div class="room-features">
-              <span class="room-feature-tag">Attached Bathroom</span>
-              <span class="room-feature-tag">Study Table</span>
-              <span class="room-feature-tag">Wardrobe</span>
-              <span class="room-feature-tag">Wi-Fi</span>
-            </div>
-            <div class="room-footer">
-              <div>
-                <div class="room-price-label">Starting from</div>
-                <div class="room-price">PKR 18,500 <span>/month</span></div>
-              </div>
-              <a href="rooms.html#double" class="room-cta">
-                View Details
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Room 3: Single -->
-        <article class="room-card reveal reveal-delay-3">
-          <div class="room-img-wrap">
-            <img src="static/images/room-single.jpg"
-                 alt="Private single room with full furnishing and personal study space"
-                 loading="lazy"
-                 onerror="this.parentElement.style.background='#0D1B2A';this.style.display='none'">
-            <span class="room-badge">Premium</span>
-          </div>
-          <div class="room-body">
-            <div class="room-type">1 Person</div>
-            <h3 class="room-name">Single Room</h3>
-            <p class="room-desc">Premium privacy and personal space for those who want a completely focused, independent living experience.</p>
-            <div class="room-features">
-              <span class="room-feature-tag">Private Bathroom</span>
-              <span class="room-feature-tag">Study Table</span>
-              <span class="room-feature-tag">Wardrobe</span>
-              <span class="room-feature-tag">Wi-Fi</span>
-            </div>
-            <div class="room-footer">
-              <div>
-                <div class="room-price-label">Starting from</div>
-                <div class="room-price">PKR 25,000 <span>/month</span></div>
-              </div>
-              <a href="rooms.html#single" class="room-cta">
-                View Details
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- CTA row -->
-      <p style="text-align:center;margin-top:36px;" class="reveal">
-        <a href="rooms.html" class="btn btn-outline-dark">
-          View All Room Details &amp; Availability →
-        </a>
-      </p>
+<!-- FACILITIES -->
+<section class="section facilities-section container">
+  <div class="section-header">
+    <span class="eyebrow">WHY STAY WITH US</span>
+    <h2>Comfort. Convenience. Community.</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="facilities-grid">
+    <div class="facility-card">
+      <div class="facility-icon"><i class="fa-solid fa-bed"></i></div>
+      <h3>Well Furnished Rooms</h3><p>Spacious, clean and fully furnished rooms for your comfort.</p>
     </div>
-  </section>
+    <div class="facility-card">
+      <div class="facility-icon"><i class="fa-solid fa-utensils"></i></div>
+      <h3>Nutritious Mess</h3><p>Hygienic and balanced meals cooked with care every day.</p>
+    </div>
+    <div class="facility-card">
+      <div class="facility-icon"><i class="fa-solid fa-wifi"></i></div>
+      <h3>High Speed Wi-Fi</h3><p>Fast and reliable internet to keep you connected always.</p>
+    </div>
+    <div class="facility-card">
+      <div class="facility-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+      <h3>Study Environment</h3><p>Peaceful atmosphere perfect for focused studies.</p>
+    </div>
+    <div class="facility-card">
+      <div class="facility-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <h3>24/7 Security</h3><p>CCTV surveillance and security staff for your safety.</p>
+    </div>
+    <div class="facility-card">
+      <div class="facility-icon"><i class="fa-solid fa-jug-detergent"></i></div>
+      <h3>Laundry Service</h3><p>Hassle-free laundry service to keep you worry-free.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section class="section container">
+  <div class="section-header">
+    <span class="eyebrow">ROOMS</span>
+    <h2>Choose Your Perfect Room</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="rooms-grid">
+    <div class="room-card">
+      <img src="static/images/hero-bg.png" class="room-image" alt="Sharing Room">
+      <div class="room-content">
+        <div class="room-header"><h3>Sharing Room</h3><span class="room-capacity"><i class="fa-regular fa-user"></i> 2 - 3 Sharing</span></div>
+        <p class="room-desc">Ideal for students who enjoy a friendly and budget-friendly stay.</p>
+        <div class="room-footer"><div class="room-price">&#8377;5,500<span> /month</span></div><a href="#" class="btn btn-primary">View Details &rarr;</a></div>
+      </div>
+    </div>
+    <div class="room-card">
+      <img src="static/images/hero-bg.png" class="room-image" alt="Double Sharing">
+      <div class="room-content">
+        <div class="room-header"><h3>Double Sharing</h3><span class="room-capacity"><i class="fa-regular fa-user"></i> 2 Sharing</span></div>
+        <p class="room-desc">Perfect balance of space, privacy and affordability.</p>
+        <div class="room-footer"><div class="room-price">&#8377;6,500<span> /month</span></div><a href="#" class="btn btn-primary">View Details &rarr;</a></div>
+      </div>
+    </div>
+    <div class="room-card">
+      <img src="static/images/hero-bg.png" class="room-image" alt="Single Room">
+      <div class="room-content">
+        <div class="room-header"><h3>Single Room</h3><span class="room-capacity"><i class="fa-regular fa-user"></i> 1 Person</span></div>
+        <p class="room-desc">Premium privacy and comfort for your focused lifestyle.</p>
+        <div class="room-footer"><div class="room-price">&#8377;9,500<span> /month</span></div><a href="#" class="btn btn-primary">View Details &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;"><a href="rooms.html" class="btn btn-outline-purple">View All Rooms &rarr;</a></div>
+</section>
+
+<!-- GALLERY -->
+<section class="section container">
+  <div class="section-header">
+    <span class="eyebrow">LIFE AT STAYNEST</span>
+    <h2>Moments That Feel Like Home</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+  </div>
+  <div style="text-align:center;"><a href="gallery.html" class="btn btn-outline-purple">View Full Gallery &rarr;</a></div>
+</section>
 
 
-  <!-- ═══════════════════════════════════════
-       MESS
-  ═══════════════════════════════════════ -->
-  <section class="section mess-section" id="mess">
-    <div class="container">
-      <div class="mess-inner">
-        <!-- Left: Info + timings -->
+  <!-- CTA BANNER -->
+  <div class="cta-banner-wrapper">
+    <div class="cta-banner">
+      <div class="cta-content">
+        <div class="cta-icon"><i class="fa-regular fa-comments"></i></div>
         <div>
-          <div class="eyebrow mess-eyebrow reveal">Dining &amp; Nutrition</div>
-          <h2 class="heading-1 mess-title reveal reveal-delay-1">Food That Feels Like Home</h2>
-          <p class="mess-desc reveal reveal-delay-2">
-            Our in-house mess serves freshly cooked, hygienic meals three times a day.
-            Every dish is prepared by experienced cooks who understand a student's nutritional needs.
-            Mess is included in your monthly package.
-          </p>
-          <div class="mess-timings reveal reveal-delay-3">
-            <div class="mess-timing-card">
-              <div class="mess-timing-meal">Breakfast</div>
-              <div class="mess-timing-time">7:00 AM – 9:00 AM</div>
-            </div>
-            <div class="mess-timing-card">
-              <div class="mess-timing-meal">Lunch</div>
-              <div class="mess-timing-time">12:30 PM – 2:30 PM</div>
-            </div>
-            <div class="mess-timing-card">
-              <div class="mess-timing-meal">Dinner</div>
-              <div class="mess-timing-time">7:30 PM – 9:30 PM</div>
-            </div>
-            <div class="mess-timing-card">
-              <div class="mess-timing-meal">Tea &amp; Snacks</div>
-              <div class="mess-timing-time">5:00 PM – 6:30 PM</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: Weekly menu card -->
-        <div class="mess-menu-card reveal reveal-delay-2">
-          <div class="mess-menu-title">Sample Weekly Menu</div>
-          <div class="menu-day">
-            <div class="menu-day-name">MON</div>
-            <div class="menu-items">Paratha + Omelette / Daal Chawal + Salad / Chicken Karahi + Roti</div>
-          </div>
-          <div class="menu-day">
-            <div class="menu-day-name">TUE</div>
-            <div class="menu-items">Halwa Puri / Biryani + Raita + Salad / Daal Mash + Sabzi + Roti</div>
-          </div>
-          <div class="menu-day">
-            <div class="menu-day-name">WED</div>
-            <div class="menu-items">Aloo Paratha / Qeema + Roti + Salad / Chicken Curry + Chawal</div>
-          </div>
-          <div class="menu-day">
-            <div class="menu-day-name">THU</div>
-            <div class="menu-items">Egg Paratha / Palak Gosht + Roti / Beef Karahi + Naan + Salad</div>
-          </div>
-          <div class="menu-day">
-            <div class="menu-day-name">FRI</div>
-            <div class="menu-items">Nihari + Naan / Special Friday Biryani / Daal Tadka + Sabzi + Roti</div>
-          </div>
-          <div style="margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);">
-            <a href="mess.html" style="font-size:.8rem;color:var(--amber);font-weight:600;">
-              View full monthly menu →
-            </a>
-          </div>
+          <h2>Have Questions?</h2>
+          <p>We're here to help you find the perfect stay.</p>
         </div>
       </div>
+      <a href="contact.html" class="btn btn-gold">Contact Us &rarr;</a>
     </div>
-  </section>
+  </div>
 
-
-  <!-- ═══════════════════════════════════════
-       GALLERY
-  ═══════════════════════════════════════ -->
-  <section class="section gallery-section" id="gallery">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="eyebrow">Life at Galaxy Boys Hostel</div>
-        <h2 class="heading-1">Moments That Feel Like Home</h2>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-item reveal">
-          <img src="static/images/gallery-1.jpg" alt="Common area of Galaxy Boys Hostel" loading="lazy"
-               onerror="this.parentElement.style.background='var(--navy-700)'">
-        </div>
-        <div class="gallery-item reveal reveal-delay-1">
-          <img src="static/images/gallery-2.jpg" alt="Furnished hostel room" loading="lazy"
-               onerror="this.parentElement.style.background='var(--navy-800)'">
-        </div>
-        <div class="gallery-item reveal reveal-delay-2">
-          <img src="static/images/gallery-3.jpg" alt="Hostel mess dining area" loading="lazy"
-               onerror="this.parentElement.style.background='var(--navy-700)'">
-        </div>
-        <div class="gallery-item reveal reveal-delay-1">
-          <img src="static/images/gallery-4.jpg" alt="Study area at the hostel" loading="lazy"
-               onerror="this.parentElement.style.background='var(--navy-900)'">
-        </div>
-        <div class="gallery-item reveal reveal-delay-2">
-          <img src="static/images/gallery-5.jpg" alt="Hostel exterior view" loading="lazy"
-               onerror="this.parentElement.style.background='var(--navy-800)'">
-        </div>
-      </div>
-
-      <div class="gallery-cta-wrap reveal">
-        <a href="gallery.html" class="btn btn-outline-dark">
-          View Full Gallery
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════
-       BOOKING / CONTACT
-  ═══════════════════════════════════════ -->
-  <section class="section booking-section" id="booking">
-    <div class="container">
-      <div class="booking-inner">
-
-        <!-- Left: Info -->
-        <div>
-          <div class="eyebrow reveal" style="margin-bottom:10px;">Get in Touch</div>
-          <h2 class="heading-1 reveal reveal-delay-1">Book Your Stay Today</h2>
-          <p class="lead reveal reveal-delay-2" style="margin-bottom:36px;">
-            Fill in the form and we'll get back to you within a few hours. We're happy to answer
-            any questions about rooms, pricing, or availability.
-          </p>
-
-          <div class="contact-list reveal reveal-delay-3">
-            <div class="contact-item">
-              <div class="contact-icon" aria-hidden="true">📞</div>
-              <div>
-                <div class="contact-label">Phone / WhatsApp</div>
-                <div class="contact-value">+92 300 1234567</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon" aria-hidden="true">✉️</div>
-              <div>
-                <div class="contact-label">Email</div>
-                <div class="contact-value">info@galaxyboyshostel.com</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon" aria-hidden="true">📍</div>
-              <div>
-                <div class="contact-label">Address</div>
-                <div class="contact-value">123, University Road, City Center</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon" aria-hidden="true">🕐</div>
-              <div>
-                <div class="contact-label">Office Hours</div>
-                <div class="contact-value">Mon – Sun: 8:00 AM – 9:00 PM</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: Form -->
-        <div class="reveal reveal-delay-2">
-          <div class="booking-form-card">
-            <h3 class="heading-2 form-title">Send an Enquiry</h3>
-            <p class="form-subtitle">We'll reply within a few hours.</p>
-
-            <form class="booking-form" novalidate>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="f-name">Full Name</label>
-                  <input type="text" id="f-name" name="name" placeholder="Your full name" required>
-                </div>
-                <div class="form-group">
-                  <label for="f-phone">Mobile Number</label>
-                  <input type="tel" id="f-phone" name="phone" placeholder="+92 300 0000000" required>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="f-email">Email Address</label>
-                <input type="email" id="f-email" name="email" placeholder="you@example.com">
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="f-room">Room Type</label>
-                  <select id="f-room" name="room">
-                    <option value="">Select a room type</option>
-                    <option value="sharing">Sharing Room – PKR 15,500</option>
-                    <option value="double">Double Sharing – PKR 18,500</option>
-                    <option value="single">Single Room – PKR 25,000</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="f-checkin">Preferred Move-in</label>
-                  <input type="date" id="f-checkin" name="checkin">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="f-message">Message (optional)</label>
-                <textarea id="f-message" name="message" placeholder="Any questions or special requirements?"></textarea>
-              </div>
-
-              <button type="submit" class="form-submit">Send Enquiry →</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- ═══════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════ -->
-  <footer class="footer" id="contact">
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-
-        <!-- Brand -->
         <div class="footer-brand">
-          <img src="static/images/Logo.png" alt="Galaxy Boys Hostel" class="footer-logo"
-               onerror="this.style.display='none'">
-          <p>More than just a place to stay. A place to live, learn, and create memories that last a lifetime.</p>
-          <div class="footer-social" role="list">
-            <a href="#" class="social-btn" aria-label="Facebook">f</a>
-            <a href="#" class="social-btn" aria-label="Instagram">in</a>
-            <a href="#" class="social-btn" aria-label="WhatsApp">w</a>
-            <a href="#" class="social-btn" aria-label="Twitter/X">𝕏</a>
+          <img src="static/images/Logo.png" alt="StayNest" class="nav-logo-img" style="height:40px;">
+          <p>More than just a place to stay. It's a place to live, learn and create memories.</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
-
-        <!-- Quick links -->
-        <div class="footer-col">
+        <div>
           <h4>Quick Links</h4>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="rooms.html">Rooms &amp; Pricing</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
             <li><a href="facilities.html">Facilities</a></li>
-            <li><a href="mess.html">Mess &amp; Food</a></li>
+            <li><a href="mess.html">Mess</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
-
-        <!-- Facilities -->
-        <div class="footer-col">
+        <div>
           <h4>Facilities</h4>
           <ul class="footer-links">
-            <li><a href="#">High-Speed Wi-Fi</a></li>
-            <li><a href="#">In-House Mess</a></li>
-            <li><a href="#">Laundry Service</a></li>
+            <li><a href="#">Wi-Fi</a></li>
+            <li><a href="#">Mess</a></li>
+            <li><a href="#">Laundry</a></li>
             <li><a href="#">CCTV Security</a></li>
             <li><a href="#">Power Backup</a></li>
             <li><a href="#">Housekeeping</a></li>
           </ul>
         </div>
-
-        <!-- Newsletter -->
-        <div class="footer-col footer-newsletter">
-          <h4>Stay Updated</h4>
-          <p>Get notified about availability, offers, and hostel news.</p>
-          <form class="newsletter-form" novalidate>
-            <input type="email" class="newsletter-input" placeholder="your@email.com" required>
-            <button type="submit" class="newsletter-btn">Go</button>
+        <div>
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fa-solid fa-envelope"></i> info@staynesthostel.com</li>
+            <li><i class="fa-solid fa-location-dot"></i> 123, University Road, City Center, Your City</li>
+            <li><i class="fa-regular fa-clock"></i> Mon - Sun: 8:00 AM - 9:00 PM</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="font-size:0.9rem; margin-bottom:15px;">Subscribe to get updates and offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="button" class="btn btn-primary" style="width:100%;"><i class="fa-regular fa-paper-plane"></i> Subscribe</button>
           </form>
-          <div style="margin-top:22px;">
-            <div style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:10px;">Contact</div>
-            <p style="font-size:.82rem;color:rgba(255,255,255,.5);line-height:2;">
-              +92 300 1234567<br>
-              info@galaxyboyshostel.com<br>
-              123, University Road, City Center
-            </p>
-          </div>
         </div>
       </div>
-
-      <!-- Bottom bar -->
       <div class="footer-bottom">
-        <p>© 2026 Galaxy Boys Hostel. All rights reserved.</p>
-        <div class="footer-legal">
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms &amp; Conditions</a>
+        <p>&copy; 2024 StayNest Hostel. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
         </div>
       </div>
     </div>
   </footer>
 
-
-  <script src="static/js/main.js"></script>
 </body>
 </html>

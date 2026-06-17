@@ -3,159 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galaxy Boys Hostel — A Home Away From Home</title>
-  <meta name="description" content="Premium boys hostel offering comfortable rooms, wholesome mess, high-speed Wi-Fi and 24/7 security. Starting from PKR 15,500/month. Inquire today.">
-  <meta property="og:title" content="Galaxy Boys Hostel — A Home Away From Home">
-  <meta property="og:description" content="Comfortable rooms, wholesome mess, 24/7 security. Starting from PKR 15,500/month.">
+  <title>StayNest Hostel</title>
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Styles -->
   <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════
-       NAVIGATION
-  ═══════════════════════════════════════ -->
-  <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <div class="nav-inner">
-      <!-- Logo -->
-      <a href="index.html" class="nav-logo" aria-label="Galaxy Boys Hostel — Home">
-        <img src="static/images/Logo.png" alt="Galaxy Boys Hostel" class="nav-logo-img" onerror="this.style.display='none'">
-        <span class="nav-logo-text">Galaxy Boys Hostel</span>
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="static/images/Logo.png" alt="StayNest Hostel" class="nav-logo-img">
+        <span class="nav-logo-text">StayNest <span>Hostel</span></span>
       </a>
-
-      <!-- Desktop links -->
-      <ul class="nav-links" role="list">
+      <ul class="nav-links">
         <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="facilities.html"    class="nav-link">Facilities</a></li>
-        <li><a href="rooms.html"     class="nav-link">Rooms</a></li>
-        <li><a href="mess.html"      class="nav-link">Mess</a></li>
-        <li><a href="gallery.html"   class="nav-link">Gallery</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="contact.html"   class="nav-link">Contact</a></li>
+        <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+        <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+        <li><a href="mess.html" class="nav-link">Mess</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
-
-      <!-- CTA + Hamburger -->
-      <a href="#booking" class="nav-cta">Book a Stay</a>
-      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="rooms.html" class="nav-cta"><i class="fa-regular fa-calendar-check"></i> Book Now</a>
     </div>
   </nav>
 
-  <!-- Mobile dropdown -->
-  <nav class="nav-mobile" aria-label="Mobile navigation">
-    <a href="facilities.html"    class="nav-link">Facilities</a>
-    <a href="rooms.html"     class="nav-link">Rooms</a>
-    <a href="mess.html"      class="nav-link">Mess</a>
-    <a href="gallery.html"   class="nav-link">Gallery</a>
-    <a href="about.html" class="nav-link">About Us</a>
-    <a href="contact.html"   class="nav-link">Contact</a>
-    <a href="#booking"   class="nav-cta btn btn-primary">Book a Stay →</a>
-  </nav>
-
-
-
-<section class="hero" style="min-height: 40vh; padding-top: 120px; align-items: flex-start;">
-  <div class="hero-bg" aria-hidden="true" style="opacity: 0.5;"></div>
-  <div class="hero-pattern" aria-hidden="true"></div>
-  <div class="container hero-content" style="padding-bottom: 40px; padding-top: 40px; text-align: center;">
-    <h1 class="display hero-title" style="margin: 0 auto;">Gallery</h1>
-    <p class="hero-subtitle" style="margin: 20px auto 0;">SUBGallery</p>
+  
+<section class="section" style="background: var(--navy-900); padding-top: calc(var(--nav-h) + 60px); padding-bottom: 60px; text-align: center; color: #fff;">
+  <div class="container">
+    <div style="font-size: 3rem; color: var(--purple); margin-bottom: 20px;"><i class="fa-solid fa-images"></i></div>
+    <span class="eyebrow" style="color: var(--gold); display: block; text-align: center; margin: 0 auto 12px;">OUR GALLERY</span>
+    <h1 class="heading-1">Explore Life at StayNest</h1>
+    <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 20px auto 0;">Take a visual tour of our vibrant community and facilities.</p>
   </div>
 </section>
-
 <section class="section container">
-  <div class="section-header" style="text-align: center;">
-    <h2>Explore Gallery</h2>
-    <div style="width: 60px; height: 3px; background: var(--amber); margin: 15px auto;"></div>
-  </div>
-  <div style="text-align: center; color: var(--text-2); min-height: 20vh;">
-    <p>Detailed information regarding Gallery will be populated here.</p>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
+    <div class="gallery-item"><img src="static/images/hero-bg.png" alt="Gallery"></div>
   </div>
 </section>
 
-  <!-- ═══════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════ -->
-  <footer class="footer" id="contact">
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner-wrapper">
+    <div class="cta-banner">
+      <div class="cta-content">
+        <div class="cta-icon"><i class="fa-regular fa-comments"></i></div>
+        <div>
+          <h2>Have Questions?</h2>
+          <p>We're here to help you find the perfect stay.</p>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-gold">Contact Us &rarr;</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-
-        <!-- Brand -->
         <div class="footer-brand">
-          <img src="static/images/Logo.png" alt="Galaxy Boys Hostel" class="footer-logo"
-               onerror="this.style.display='none'">
-          <p>More than just a place to stay. A place to live, learn, and create memories that last a lifetime.</p>
-          <div class="footer-social" role="list">
-            <a href="#" class="social-btn" aria-label="Facebook">f</a>
-            <a href="#" class="social-btn" aria-label="Instagram">in</a>
-            <a href="#" class="social-btn" aria-label="WhatsApp">w</a>
-            <a href="#" class="social-btn" aria-label="Twitter/X">𝕏</a>
+          <img src="static/images/Logo.png" alt="StayNest" class="nav-logo-img" style="height:40px;">
+          <p>More than just a place to stay. It's a place to live, learn and create memories.</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
-
-        <!-- Quick links -->
-        <div class="footer-col">
+        <div>
           <h4>Quick Links</h4>
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="rooms.html">Rooms &amp; Pricing</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
             <li><a href="facilities.html">Facilities</a></li>
-            <li><a href="mess.html">Mess &amp; Food</a></li>
+            <li><a href="mess.html">Mess</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
-
-        <!-- Facilities -->
-        <div class="footer-col">
+        <div>
           <h4>Facilities</h4>
           <ul class="footer-links">
-            <li><a href="#">High-Speed Wi-Fi</a></li>
-            <li><a href="#">In-House Mess</a></li>
-            <li><a href="#">Laundry Service</a></li>
+            <li><a href="#">Wi-Fi</a></li>
+            <li><a href="#">Mess</a></li>
+            <li><a href="#">Laundry</a></li>
             <li><a href="#">CCTV Security</a></li>
             <li><a href="#">Power Backup</a></li>
             <li><a href="#">Housekeeping</a></li>
           </ul>
         </div>
-
-        <!-- Newsletter -->
-        <div class="footer-col footer-newsletter">
-          <h4>Stay Updated</h4>
-          <p>Get notified about availability, offers, and hostel news.</p>
-          <form class="newsletter-form" novalidate>
-            <input type="email" class="newsletter-input" placeholder="your@email.com" required>
-            <button type="submit" class="newsletter-btn">Go</button>
+        <div>
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fa-solid fa-envelope"></i> info@staynesthostel.com</li>
+            <li><i class="fa-solid fa-location-dot"></i> 123, University Road, City Center, Your City</li>
+            <li><i class="fa-regular fa-clock"></i> Mon - Sun: 8:00 AM - 9:00 PM</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="font-size:0.9rem; margin-bottom:15px;">Subscribe to get updates and offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="button" class="btn btn-primary" style="width:100%;"><i class="fa-regular fa-paper-plane"></i> Subscribe</button>
           </form>
-          <div style="margin-top:22px;">
-            <div style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:10px;">Contact</div>
-            <p style="font-size:.82rem;color:rgba(255,255,255,.5);line-height:2;">
-              +92 300 1234567<br>
-              info@galaxyboyshostel.com<br>
-              123, University Road, City Center
-            </p>
-          </div>
         </div>
       </div>
-
-      <!-- Bottom bar -->
       <div class="footer-bottom">
-        <p>© 2026 Galaxy Boys Hostel. All rights reserved.</p>
-        <div class="footer-legal">
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms &amp; Conditions</a>
+        <p>&copy; 2024 StayNest Hostel. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
         </div>
       </div>
     </div>
   </footer>
 
-
-  <script src="static/js/main.js"></script>
 </body>
 </html>
