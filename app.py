@@ -1,7 +1,6 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-app.config['FREEZER_RELATIVE_URLS'] = True
 
 @app.route('/')
 def home():
